@@ -14,9 +14,6 @@
     text-align: justify;
     flex: 1;
     padding: 12rem 10rem;
-    background-color: #f2f2f2; /* Optional: Add background color */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
   }
   
 .About-header {
@@ -35,9 +32,10 @@
 
 /* Style the text content */
 .About-item h1 {
-    font-size: 2.5rem; /* Adjust the heading font size */
+    font-size: 5rem; /* Adjust the heading font size */
     margin-bottom: 5rem; /* Remove margin to align heading and paragraph */
-    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .About-item p {

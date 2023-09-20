@@ -1,52 +1,71 @@
-.Skills {
-    text-align: center;
+.skill {
     display: flex;
-    justify-content: center; /* Center the cards horizontally */
-    align-items: center; /* Center the cards vertically */
-    height: 100vh; /* Align the cards to the top of the container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+    min-height: 100vh; /* Minimum height to occupy full viewport height */
+    background-color: #333;
+    color: white;
 }
 
-.Skill-card {
-    flex: 1;
-    max-width: 400px;
-    height: 40vh;
-    margin: 0 20px; /* Add some margin to create space between the cards */
-    padding: 1rem 2rem;
-    background-color: #f2f2f2;
+.skill-card {
+    background: #333;
+    padding: 1rem 9rem;
+    margin: -2rem 0rem;
+    cursor: pointer;
+    width: calc(50% - 1rem);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+    inset 0px 0px 20px rgba(100, 100, 100, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.Skill-card h2 {
-    font-size: 2rem; /* Adjust the heading font size */
-    margin-bottom: 5rem; /* Remove margin to align heading and paragraph */
+.skill-card h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
     font-family: 'Inter', sans-serif;
 }
 
-.Skill-list {
+.skill-card p {
+    margin: 0;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+.skill-list {
     font-size: 1.5rem; /* Adjust the paragraph font size */
     font-family: 'Open Sans', sans-serif;
 }
-  
-.Skill-container {
+
+.skill-container {
     display: flex;
     justify-content: space-around;
 }
-  
-.Skill-item {
+
+.skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    flex: 1;
-    padding: 3rem 10rem;
-    background-color: #f2f2f2; /* Optional: Add background color */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    padding: 12rem 0rem;
   }
-  
-.Skill-header {
+
+.skill-item h1 {
+    font-size:5rem; /* Adjust the heading font size */
+    margin-bottom: 5rem; /* Remove margin to align heading and paragraph */
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.skill-header {
     background-color: #8d8d8d;
     min-height: 10vh;
     display: flex;
@@ -55,23 +74,31 @@
     color: white;
 }
 
-.Skill-logo {
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px 3rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skill-logo {
     height: 40vmin;
     pointer-events: none;
 }
 
-  
+
 @media (prefers-reduced-motion: no-preference) {
-    .Skill-logo {
+    .skill-logo {
         animation: Skills-logo-spin infinite 20s linear;
     }
 }
 
-.Skill-link {
+.skill-link {
     color: #61dafb;
 }
-  
-@keyframes Skills-logo-spin {
+
+@keyframes skill-logo-spin {
     from {
         transform: rotate(0deg);
     }
@@ -79,31 +106,4 @@
         transform: rotate(360deg);
     }
 }
-  
 
-/* Initially hide the navbar */
-.invisible-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: height 0.3s, opacity 0.3s;
-    background-color: #333; /* Set the background color */
-    color: #fff; /* Set the text color */
-    /* Add other styles as needed */
-  }
-  
-  /* Style the links in the navbar */
-  .invisible-navbar a {
-    color: #fff; /* Set link color */
-    text-decoration: none;
-    padding: 15px; /* Add padding for links */
-  }
-  
-  /* Style the links on hover */
-  .invisible-navbar a:hover {
-    background-color: #555; /* Add a background color on hover */
-  }

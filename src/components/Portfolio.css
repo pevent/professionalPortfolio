@@ -1,39 +1,96 @@
-.Portfolio {
-    text-align: center;
-  }
-  
-  .Portfolio-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .Portfolio-logo {
-      animation: Portfolio-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .Portfolio-header {
-    background-color: #8d8d8d;
-    min-height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .Portfolio-link {
-    color: #61dafb;
-  }
-  
-  @keyframes Portfolio-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* Minimum height to occupy full viewport height */
+  background-color: #fff; /* Background color for the portfolio section */
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 12rem 0rem;
+}
+
+.portfolio-item h1 {
+  font-size:5rem; /* Adjust the heading font size */
+  margin-bottom: 5rem; /* Remove margin to align heading and paragraph */
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.portfolio-card {
+  background: #fff;
+  padding: 1rem 9rem;
+  margin: 0rem;
+  cursor: pointer;
+  width: calc(50% - 1rem);
+  border-radius: 10px;
+  text-align: justify;
+  border: 10px solid #000;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3),
+  inset 0px 0px 20px rgba(100, 100, 100, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-card h2 {
+  margin: 0 0 1rem 0; /* Adding margin to the bottom to space it out from the paragraph */
+  font-size: 1.5rem; /* You can adjust font size if necessary */
+}
+
+.portfolio-card p {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size to make text less cramped */
+   /* Justify text to distribute it evenly across lines */
+  max-width: 100%; /* Set a max-width to avoid stretching on wide screens */
+}
+
+.portfolio-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  border: 10px solid #000;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  cursor: pointer;
+
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-detail p{
+  text-align: justify;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Start with a transparent background */
+  z-index: 2; /* Place the overlay above other content */
+  cursor: pointer; /* Show a pointer cursor to indicate it's clickable */
+  transition: opacity 0.5s ease-in-out;
+}

@@ -19,9 +19,10 @@
 
 /* Style the profile photo */
 .Hero-photo {
-  max-width: 300px; /* Adjust the maximum width of the photo */
-  margin-right: 20px; /* Add some spacing between the photo and text */
-  border-radius: 5%; /* Add a round border to the image */
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 5%;
+  border: 10px solid #fff;
 }
 
 .Hero-text {
@@ -30,13 +31,15 @@
 
   /* Style the text content */
 .Hero-text h1 {
-  font-size: 3rem; /* Adjust the heading font size */
-  margin: 0; /* Remove margin to align heading and paragraph */
-  font-family: 'Inter', sans-serif;
+  font-size: 5rem; /* Adjust the heading font size */
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .Hero-text p {
   font-size: 2rem; /* Adjust the paragraph font size */
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 }
   
