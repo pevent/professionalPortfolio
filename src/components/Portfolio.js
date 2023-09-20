@@ -3,12 +3,12 @@ import './Portfolio.css';
 
 function Portfolio() {
   return (
-    <div >
+    <section name="portfolio" className="Portfolio-section">
         <div class='Portfolio-header'>
             <h1>Portfolio</h1>
         </div>
         <p>we are .....</p>
-    </div>
+    </section>
   );
 }
 

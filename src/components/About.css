@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     flex: 1;
-    max-width: 300px; /* Optional: Adjust the max-width as needed */
-    padding: 1rem;
+    padding: 12rem 10rem;
     background-color: #f2f2f2; /* Optional: Add background color */
     border-radius: 10px; /* Optional: Add rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
@@ -25,7 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
 }
 
@@ -34,6 +33,17 @@
     pointer-events: none;
 }
 
+/* Style the text content */
+.About-item h1 {
+    font-size: 2.5rem; /* Adjust the heading font size */
+    margin-bottom: 5rem; /* Remove margin to align heading and paragraph */
+    font-family: 'Inter', sans-serif;
+}
+
+.About-item p {
+    font-size: 1.5rem; /* Adjust the paragraph font size */
+    font-family: 'Open Sans', sans-serif;
+}
 
   
 @media (prefers-reduced-motion: no-preference) {

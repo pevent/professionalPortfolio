@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         {/* Add your footer content here */}
-        <p>&copy; {new Date().getFullYear()} Hvent. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Pedro Ventura. All rights reserved.</p>
       </div>
     </footer>
   );
