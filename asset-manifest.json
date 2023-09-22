@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pevent.github.io/professionalPortfolio/static/css/main.fc418ea6.css",
+    "main.js": "/pevent.github.io/professionalPortfolio/static/js/main.d7f0c4fc.js",
+    "static/js/787.36c09966.chunk.js": "/pevent.github.io/professionalPortfolio/static/js/787.36c09966.chunk.js",
+    "index.html": "/pevent.github.io/professionalPortfolio/index.html",
+    "main.fc418ea6.css.map": "/pevent.github.io/professionalPortfolio/static/css/main.fc418ea6.css.map",
+    "main.d7f0c4fc.js.map": "/pevent.github.io/professionalPortfolio/static/js/main.d7f0c4fc.js.map",
+    "787.36c09966.chunk.js.map": "/pevent.github.io/professionalPortfolio/static/js/787.36c09966.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc418ea6.css",
+    "static/js/main.d7f0c4fc.js"
+  ]
+}
